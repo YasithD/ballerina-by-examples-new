@@ -1,0 +1,211 @@
+/* Variables */
+.code-button-container {
+  --link-color: #e9edf1;
+  --link-hover-color: #afbac5;
+}
+
+/* Navigation */
+.bal-nav-item > a {
+  font-family: "pragmatica", sans-serif !important;
+}
+
+.bal-nav-item > div {
+  cursor: pointer !important;
+}
+
+.bal-active {
+  color: #22b7b2 !important;
+}
+
+/* Toggle Category */
+.part-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.part-title > div {
+  cursor: pointer;
+}
+
+.part-title > a {
+  margin-left: auto;
+  padding: 0 10px !important;
+}
+
+.part-title > a > div {
+  transition: transform 0.5s;
+}
+
+.part-title.expanded > a > div {
+  transform: rotate(90deg);
+}
+
+.part-title.expanded + ol {
+  display: block;
+}
+
+.part-title:not(.expanded) + ol {
+  display: none;
+}
+
+/* Page Content */
+.bal-header {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #464646 !important;
+}
+
+.bal-description {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  color: #57595d;
+  margin-bottom: 20px !important;
+}
+
+.bal-description > a {
+  color: #3ad1ca !important;
+}
+
+.bal-description code {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  color: #57595d;
+}
+
+pre > code > span > span {
+  font-size: 14px !important;
+}
+
+/* Shiki */
+.shiki {
+  padding: 16px;
+}
+
+.bal-execute,
+.bal-result {
+  color: #3ad1ca;
+}
+
+/* Containers */
+.container {
+  width: 90% !important;
+}
+
+ol.chapter {
+  width: 265px !important;
+}
+
+.row.cBallerina-io-Gray-row > .container {
+  min-height: 500px;
+}
+
+.bal-container {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: var(--sidebar-width) !important; */
+  width: 70% !important;
+}
+
+.code-container {
+  background-color: #f5f6f6;
+  padding: 16px;
+}
+
+.output-container {
+  padding: 16px;
+}
+
+.output-container .language-bash {
+  background-color: inherit !important;
+}
+
+main.bal-container > pre {
+  background-color: #263238 !important;
+}
+
+.code-button-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  position: relative;
+  margin-left: var(--sidebar-width);
+}
+
+/* Fonts */
+.bal-code {
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 12px;
+}
+
+.bal-output {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 12px;
+}
+
+/* Icons */
+pre > button {
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  background-color: transparent;
+  border: none !important;
+  height: fit-content;
+}
+
+pre > button:nth-child(2) {
+  margin-left: auto;
+}
+
+pre > button:nth-child(4) {
+  display: none;
+}
+
+/* Navigation Buttons */
+.bal-container > div {
+  display: flex;
+}
+
+.desc-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.bal-nav-btns {
+  display: flex !important;
+  width: 40% !important;
+}
+
+.bal-nav-btns > .cButtonInfoContainer:nth-child(1) {
+  margin-left: auto !important;
+}
+
+.code-button-container .prev-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.code-button-container .next-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.code-button-container > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  background-color: var(--link-color);
+}
+
+.code-button-container > a:hover {
+  background-color: var(--link-hover-color);
+}
