@@ -1,7 +1,7 @@
 /* Variables */
 .code-button-container {
-  --link-color: #e9edf1;
-  --link-hover-color: #afbac5;
+  --link-color: #eee;
+  --link-hover-color: #f8f8f8;
 }
 
 /* Navigation */
@@ -77,7 +77,7 @@
 }
 
 pre > code > span > span {
-  font-size: 14px !important;
+  font-size: 12px !important;
 }
 
 /* Shiki */
